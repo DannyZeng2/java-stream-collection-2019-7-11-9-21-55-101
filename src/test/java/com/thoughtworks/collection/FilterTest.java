@@ -9,7 +9,7 @@ import static org.fest.assertions.api.Assertions.assertThat;
 public class FilterTest {
 
     @Test
-    public void should_return_even() {
+    public void should_return_even() { //预计：1min 实际：1min
         //求数组中的偶数
         Integer[] array = new Integer[]{1, 2, 3, 4, 5};
         List<Integer> arrayList = Arrays.asList(array);
@@ -23,7 +23,7 @@ public class FilterTest {
     }
 
     @Test
-    public void should_return_multiple_of_three() {
+    public void should_return_multiple_of_three() { //预计：1min 实际：1min
         //求数组中3的倍数
         Integer[] array = new Integer[]{6, 2, 3, 4, 9};
         List<Integer> arrayList = Arrays.asList(array);
@@ -37,7 +37,7 @@ public class FilterTest {
     }
 
     @Test
-    public void should_return_different_elements_in_arrayList() {
+    public void should_return_different_elements_in_arrayList() { //预计：3min 实际：5min
         //去除数组中的重复元素
         Integer[] array = new Integer[]{1, 1, 1, 2, 3};
         List<Integer> arrayList = Arrays.asList(array);
@@ -50,7 +50,7 @@ public class FilterTest {
     }
 
     @Test
-    public void should_return_common_elements() {
+    public void should_return_common_elements() { //预计：2min 实际：10min
         //求两数组的公共元素
         Integer[] array = new Integer[]{6, 2, 3, 4, 9};
         Integer[] array1 = new Integer[]{2, 3, 5, 9, 6};
