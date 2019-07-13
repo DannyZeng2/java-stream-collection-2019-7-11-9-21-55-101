@@ -10,7 +10,7 @@ import static org.fest.assertions.api.Assertions.assertThat;
 public class CollectionOperatorTest {
 
     @Test
-    public void should_return_list_by_Interval() {
+    public void should_return_list_by_Interval() {  //预计：2min 实际：3min
         //选出给定区间中所有的数字
 
         int right = 5;
@@ -28,7 +28,7 @@ public class CollectionOperatorTest {
     }
 
     @Test
-    public void should_return_list_by__two_Intervals() {
+    public void should_return_list_by__two_Intervals() { //预计：1min 实际：1min
         //选出给定区间中所有的偶数
         int right = 10;
         int left = 1;
@@ -45,7 +45,7 @@ public class CollectionOperatorTest {
     }
 
     @Test
-    public void should_pop_even_elements() {
+    public void should_pop_even_elements() { //预计：1min 实际：1min
     //选出给定区间中所有的偶数
         int[] array = new int[]{1, 2, 3, 4, 5};
 
@@ -58,7 +58,7 @@ public class CollectionOperatorTest {
     }
 
     @Test
-    public void should_pop_last_element() {
+    public void should_pop_last_element() { //预计：1min 实际：1min
         //弹出集合最后一个元素
         int[] array = new int[]{1, 2, 3, 4, 5};
 
