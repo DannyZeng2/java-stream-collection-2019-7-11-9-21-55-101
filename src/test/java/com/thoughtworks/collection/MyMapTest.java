@@ -9,7 +9,7 @@ import static org.fest.assertions.api.Assertions.assertThat;
 public class MyMapTest {
 
     @Test
-    public void should_map_to_triple() {
+    public void should_map_to_triple() {  //预计：1min 实际：1min
         //将集合A中得元素映射成集合B中的元素
 
         Integer[] array = new Integer[]{1, 3, 5, 4, 9};
@@ -24,7 +24,7 @@ public class MyMapTest {
     }
 
     @Test
-    public void should_map_to_letter() {
+    public void should_map_to_letter() { //预计：1min 实际：3min
         //数字映射为字母
         Integer[] array = new Integer[]{1, 2, 3, 4, 5};
         List<Integer> list = Arrays.asList(array);
@@ -52,7 +52,7 @@ public class MyMapTest {
 //    }
 
     @Test
-    public void should_sort_from_big_to_small() {
+    public void should_sort_from_big_to_small() { //预计：3min 实际：5min
         //从大到小排序
         Integer[] array = new Integer[]{1, 2, 3, 4, 5};
         List<Integer> list = Arrays.asList(array);
@@ -66,7 +66,7 @@ public class MyMapTest {
     }
 
     @Test
-    public void should_sort_from_small_to_big() {
+    public void should_sort_from_small_to_big() { //预计：1min 实际：1min
         //从小到大排序
         Integer[] array = new Integer[]{3, 2, 4, 5, 1};
         List<Integer> list = Arrays.asList(array);
