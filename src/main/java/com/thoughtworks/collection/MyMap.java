@@ -31,16 +31,14 @@ public class MyMap {
             int a1 = i/26;
             int a2 = i%26;
             String b1 = "";
-            String b2 = "";
-            if(a1!=0&&a2!=0) {
+            if(i%26==0) {
+                a1 = a1-1;
+                a2 = 26;
+            }
+            if(a1!=0){
                 b1 = letters[a1-1];
             }
-            if(a1!=0&&a2==0){
-                b2 = letters[25];
-            }
-            if(a2!=0&&i>26) {
-                b2 = letters[a2-1];
-            }
+            String b2 = letters[a2-1];
             return b1+b2;
         }).collect(Collectors.toList());
     }
